@@ -5,10 +5,10 @@
 
 -- Set this to your E-ink display name.
 -- Run `hs.screen.allScreens()` in the Hammerspoon console to find it.
-local EINK_SCREEN_NAME = "YOUR_EINK_DISPLAY_NAME"
+local EINK_SCREEN_NAME = "Mira133"
 
 local EINK_THEME = "eink"
-local NORMAL_THEME = "Catppuccin Frappe"
+local NORMAL_THEME = "One Half Dark"
 
 local function getGhosttyConfigPath()
     local home = os.getenv("HOME")

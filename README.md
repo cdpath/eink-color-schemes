@@ -51,10 +51,10 @@ Make sure Obsidian is set to light mode (Settings > Appearance > Base color sche
 If you use a secondary E-ink display alongside a regular monitor, you can automatically switch Ghostty to the eink theme when its window moves to the E-ink screen.
 
 1. Copy `hammerspoon/ghostty_eink.lua` to `~/.hammerspoon/`
-2. Edit `EINK_SCREEN_NAME` at the top of the file to match your display name. Run `hs.screen.allScreens()` in the Hammerspoon console to find it.
-3. Edit `NORMAL_THEME` to your preferred regular theme.
-4. Add `require("ghostty_eink")` to your `~/.hammerspoon/init.lua`
-5. Reload Hammerspoon.
+2. Add `require("ghostty_eink")` to your `~/.hammerspoon/init.lua`
+3. Reload Hammerspoon.
+
+Defaults are configured for Boox Mira 133 (`Mira133`) with `One Half Dark` as the normal theme. If you use a different E-ink display, edit `EINK_SCREEN_NAME` and `NORMAL_THEME` at the top of `ghostty_eink.lua`. Run `hs.fnutils.each(hs.screen.allScreens(), function(s) print(s:name()) end)` in the Hammerspoon console to find your display name.
 
 The script watches Ghostty windows and rewrites the theme config + triggers a reload whenever a window moves between screens.
 
