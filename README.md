@@ -1,4 +1,4 @@
-# einkeink
+# eink-color-schemes
 
 Color schemes optimized for E-ink displays. High contrast, grayscale-only, designed for readability on low-refresh panels.
 
